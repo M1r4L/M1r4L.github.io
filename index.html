@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
-        <div class="logo"><img src="image/logo2_1.png"></div>
+        <div class="logo"><img src="catalog/image/logo.png" alt="Логотип"></div>
         <nav>
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">История</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="catalog/catalog.html">Каталог</a></li>
                 <li><a href="#">Тест</a></li>
                 <li><a href="#">С чего начать</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <div class="item left">
-                <img src="image/classic.jpg" alt="Классика">
-                <h2>Классическая Гитара</h2>
-            </div>
-            <div class="item center">
-                <img src="image/electro.jpg" alt="Электро">
-                <h2>Электрогитара</h2>
-            </div>
-            <div class="item right">
-                <img src="image/acoustic.jpg" alt="Акустика">
-                <h2>Акустическая Гитара</h2>
-            </div>
+
+    <div class="container">
+        <h1>Профессиональный подбор гитары</h1>
+        <hr class="divider">
+
+        <div class="content-text">
+            <p>Я перепробовал десятки магазинов, где продавцы твердили: «Эта гитара — огонь!» (но не могли объяснить
+                почему), советовали «что подешевле» новичкам или навязывали топовые модели «на вырост». После такого
+                хочется махнуть рукой и заказать первую попавшуюся в интернете.</p>
+
+            <p class="signature">Мы делаем иначе:</p>
         </div>
-    </main>
-    <footer>
-        ТУт пОка НИчЕГо НетУ ;)
-    </footer>
+        <div class="content-text2">
+            <p>1. Объясняем просто<br>
+                Нет непонятных терминов вроде «анубингованный гриф» или «кленовый топ». Расскажем, как на самом деле
+                влияет материал корпуса на звук и почему стратовский звукосниматель — не всегда лучше.</p>
+
+            <p>2. Подбираем под ваш стиль<br>
+                Рок, блюз, фламенко или дворовые песни — разные гитары для разных задач. Не будем предлагать
+                семиструнный метал-монстр, если вы мечтаете играть бардовские баллады.</p>
+
+            <p>3. Честно про бюджет<br>
+                Покажем достойные варианты за 10, 30 и 50 тысяч — без накруток «за бренд».</p>
+        </div>
+        <div class="buttons">
+            <button class="btn">К каталогу</button>
+        </div>
+    </div>
 </body>
+
 </html>
