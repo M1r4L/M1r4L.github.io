@@ -13,7 +13,7 @@
     --nav-underline: #001AFF;
     --divider-color: #001AFF;
     --signature-color: #001AFF;
-    --btn-hover: #0066cc;
+    --btn-hover: #2d93f9;
 }
 
 [data-theme="dark"] {
@@ -105,6 +105,7 @@ nav ul li a:hover::after {
     max-width: 80%;
     margin: 30px auto;
     padding: 0 20px;
+    text-align: center;
     color: var(--text-color);
 }
 
@@ -140,6 +141,31 @@ h1 {
     margin-bottom: 15px;
 }
 
+.content-text3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: var(--divider-color);
+    color: var(--bg-color);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
 .divider {
     border: none;
     height: 1px;
@@ -150,14 +176,17 @@ h1 {
 .signature {
     text-align: left;
     margin-top: 20px;
-    color: var(--signature-color);
+    color: var(--divider-color);
+}
+
+.citat{
+    text-align: left;
+    margin-top: 20px;
+    color: var(--divider-color);
+    font-style: italic;
 }
 
 .btn:hover {
     background-color: var(--btn-hover);
-    transition-duration: 0.3s;
-}
-
-.theme-btn:hover {
-    transform: scale(1.1);
+    transition-duration: 0.3s
 }
