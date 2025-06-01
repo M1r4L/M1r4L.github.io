@@ -13,6 +13,7 @@
     --nav-underline: #001AFF;
     --divider-color: #001AFF;
     --signature-color: #001AFF;
+    --txt-color:#001AFF;
     --btn-hover: #0066cc;
 }
 
@@ -25,6 +26,7 @@
     --nav-underline: #00D9FF;
     --divider-color: #00D9FF;
     --signature-color: #00D9FF;
+    --txt-color:#00D9FF;
     --btn-hover: #0080FF;
 }
 
@@ -243,7 +245,7 @@ main {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: #001AFF;
+    color: var(--txt-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
