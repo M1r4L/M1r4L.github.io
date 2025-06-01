@@ -1,3 +1,3 @@
-document.getElementById('catalogBtn').addEventListener('click', function() {
-            window.location.href = "../catalog.html";
-        });
+document.getElementById('catalogBtn').addEventListener('click', async function () {/*про асинхронность это шутка, оно просто сработало*/
+    window.location.href = "../catalog.html";
+});
