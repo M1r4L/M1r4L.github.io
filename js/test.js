@@ -52,7 +52,6 @@ class PersonalityQuiz {
     }
 }
 
-
 const questions = [
     new Question("Как вы проводите свободное время?", {
         "A": "Прокрастинирую",
@@ -160,11 +159,24 @@ function showResult() {
     const quizElement = document.getElementById("quiz");
     const result = quiz.getResult();
 
-    quizElement.innerHTML = `
-    <h1 class="result-title">Ваш результат: ${result.title}</h1>
-    <p>${result.description}</p>
-    <button onclick="location.reload()">Пройти тест снова</button>
-    `;
+    while (quizElement.firstChild) {
+        quizElement.removeChild(quizElement.firstChild);
+    }
+
+    const title = document.createElement("h1");
+    title.className = "result-title";
+    title.textContent = `Ваш результат: ${result.title}`;
+
+    const description = document.createElement("p");
+    description.textContent = result.description;
+
+    const button = document.createElement("button");
+    button.textContent = "Пройти тест снова";
+    button.onclick = () => location.reload();
+
+    quizElement.appendChild(title);
+    quizElement.appendChild(description);
+    quizElement.appendChild(button);
 }
 
 displayQuestion();
